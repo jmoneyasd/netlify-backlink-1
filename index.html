@@ -1,35 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Netlify Site</title>
-    <meta name="description" content="A simple website hosted on Netlify">
+    <title>Private Lender Spot App | Alternative Lending Directory</title>
+    <meta name="description" content="Access the nation's premier directory of hard money lenders and asset-based financing options across all 50 states">
     <style>
+        :root {
+            --primary-blue: #003366;
+            --light-blue: #e6f0ff;
+            --accent-blue: #0066cc;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --border-light: #dddddd;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fafafa;
+        }
+        
+        header {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-blue);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-top: 8px;
+            color: #e6f0ff;
+        }
+        
+        main {
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
         }
+        
+        h2 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 10px;
+        }
+        
+        .feature-box {
+            background-color: var(--light-blue);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--primary-blue);
+        }
+        
         .footer {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 30px 20px;
+            text-align: center;
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .footer a:hover {
+            color: var(--light-blue);
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Private Lender Spot's APP</h1>
+        <div class="container">
+            <h1>Private Lender Spot</h1>
+            <p class="tagline">Alternative Lending Solutions Across America</p>
+        </div>
     </header>
     
     <main>
-        <p>This is a simple webapp.</p>
-        <p>Feel free to explore and learn more about what we offer at our main site below.</p>
+        <div class="container">
+            <h2>Welcome to the Private Lender Spot Web App</h2>
+            
+            <p>Private Lender Spot is the nation's premier directory for hard money lenders, asset-based lenders, and alternative financing options. Our comprehensive database features trusted lenders across all 50 states, connecting borrowers with the right financing solutions for their unique needs.</p>
+            
+            <div class="feature-box">
+                <p>Whether you're a real estate investor seeking quick capital for property acquisitions, a business owner looking for equipment financing, or an entrepreneur in need of flexible funding options, Private Lender Spot connects you with lenders who specialize in your specific requirements.</p>
+            </div>
+            
+            <p>Our directory showcases lenders who offer:</p>
+            <ul>
+                <li>Hard money loans for real estate investments</li>
+                <li>Bridge financing for time-sensitive opportunities</li>
+                <li>Asset-based lending solutions</li>
+                <li>Fix-and-flip funding programs</li>
+                <li>Commercial property financing</li>
+                <li>Construction and development loans</li>
+            </ul>
+            
+            <p>With Private Lender Spot, you gain access to a network of reputable lenders who understand the importance of speed, flexibility, and personalized service in today's competitive market.</p>
+            
+            <a href="https://privatelenderspot.com" class="cta-button">Explore Our Full Directory</a>
+        </div>
     </main>
     
     <div class="footer">
-        <p>For more information, visit our main site: <a href="https://privatelenderspot.com">Private Lender Spot</a></p>
+        <div class="container">
+            <p>For our complete lender directory and financing resources, visit our main site:</p>
+            <p><a href="https://privatelenderspot.com">PrivateLenderSpot.com</a></p>
+            <p class="copyright">© 2025 Private Lender Spot. All rights reserved.</p>
+        </div>
     </div>
 </body>
 </html>
